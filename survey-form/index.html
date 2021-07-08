@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Survey form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1 id="title" class="center-text">TokoIjo Survey Form</h1>
+        <p id="description" class="center-text description">Thank you for taking the time to help us improve our store</p>
+      </header>
+      <!--   Form section  -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age <span class="clue">(opsional)</span></label>
+          <input type="number" id="number" class="form-control" min="14" max="99" placeholder="Enter your age" />
+        </div>
+        <div class="form-group">
+          <label>Which one is your current role?</label>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select curret role</option>
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Radio botton -->
+        <div class="form-group">
+          <p>Would you recomend TokoIjo to a friend?</p>
+          <label>
+            <input type="radio" name="user-recomend" value="highly" class="input-radio" checked />
+            Highly
+          </label>
+          <label>
+            <input type="radio" name="user-recomend" value="maybe" class="input-radio" />
+            Maybe
+          </label>
+        </div>
+        <label>
+          <input type="radio" name="user-recomend" value="no" class="input-radio" />
+          Not sure
+        </label>
+        <div class="form-group">
+          <p>What we have to improve our service? <span class="clue">(you can check more than one)</span></p>
+          <label> <input type="checkbox" name="prefer" value="customer-service" class="input-checkbox" />Customer service</label>
+          <label> <input type="checkbox" name="prefer" value="selling" class="input-checkbox" />Selling</label>
+          <label> <input type="checkbox" name="prefer" value="product" class="input-checkbox" />Product</label>
+          <label> <input type="checkbox" name="prefer" value="shipping" class="input-checkbox" />Shipping</label>
+        </div>
+        <div class="form-group">
+          <p>Any comment or suggestions?</p>
+          <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- partial -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
