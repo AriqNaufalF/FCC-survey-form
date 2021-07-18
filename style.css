@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(117deg, rgba(27, 128, 15, 0.9) 0%, rgba(31, 166, 16, 0.7) 17%, rgba(128, 255, 108, 0.6) 75%), url(img/toko.jpg);
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  font-family: Titillium Web, sans-serif;
+  color: whitesmoke;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 4.8rem;
+  margin-top: 40px;
+}
+
+h1,
+p {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 1.6rem;
+  color: azure;
+}
+
+.description {
+  font-style: italic;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* form */
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+form {
+  font-size: 1.8rem;
+  margin: 0 auto;
+  background: rgba(27, 128, 15, 0.85);
+  max-width: 600px;
+  padding: 20px 35px;
+  border-radius: 10px;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.form-control {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+  padding: 5px;
+}
+
+.form-control:focus {
+  outline: 0;
+  border: 1px #ca1fca;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  min-height: 2rem;
+  min-width: 2rem;
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 0.7em;
+  border-radius: 4px;
+  cursor: pointer;
+  color: inherit;
+  background: #ca1fca;
+  border: none;
+}
